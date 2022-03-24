@@ -97,7 +97,7 @@ h1 {
 }
 
 @media (min-width:1200px) {
-h1, h2, .contentbox {
+h2, .contentbox {
     width: 1200px;
     display: flex;
     flex-wrap: wrap;

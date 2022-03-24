@@ -1,0 +1,104 @@
+/* General setting */
+
+.heading, .navbar, h1, h2, .contentbox{
+    display: flex;
+}
+
+/* Heading setting */
+
+.heading {
+    justify-content: space-between;
+}
+
+.icon {
+    margin-left: 1rem;
+    margin-right: auto;    
+}
+
+
+
+/* .navbar {
+    justify-content: space-around;
+} */
+
+.title {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+li {
+    margin: 1rem;
+}
+
+/* Title Banner Setting */
+
+h1, h2 {
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    background: #F7C506;
+    color: #fff;
+    height: 50vh; 
+}
+
+.red {
+    color: #f00;
+}
+
+.blue {
+    color: #00f;
+}
+
+.green {
+    color: #0f0;
+}
+
+.yellow {
+    color: #F7C506;
+}
+
+/* Content setting */
+
+.contentbox {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.charmander, .bulbasaur, .squirtle, .pikachu {
+    margin: 1rem;
+    width: 30rem;
+    height: 15rem;
+    text-align: center;
+    font-size: 2rem;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.charmander {
+    border: 6px solid #a11d33;
+    background: #da1e37;
+}
+
+.bulbasaur {
+    border: 6px solid #028090;
+    background: #5bc0be;
+}
+
+.squirtle {
+    border: 6px solid #01497c;
+    background: #90e0ef;
+}
+
+.pikachu {
+    border: 6px solid #ff8800;
+    background: #ffea00;
+}
+
+@media (min-width:1200px) {
+h1, h2, .contentbox {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}

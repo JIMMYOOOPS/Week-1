@@ -15,12 +15,6 @@
     margin-right: auto;    
 }
 
-
-
-/* .navbar {
-    justify-content: space-around;
-} */
-
 .title {
     margin-top: auto;
     margin-bottom: auto;
@@ -97,8 +91,9 @@ h1 {
 }
 
 @media (min-width:1200px) {
-h2, .contentbox {
+.contentbox {
     width: 1200px;
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
 }

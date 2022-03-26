@@ -9,10 +9,11 @@ function countAandB(input) {
             countA ++; 
         } else if (inputletter[0] === 'b') {
             countB ++;
-        }; 
-        let countAplusB = countA + countB
-        console.log(countAplusB);
+        } 
+        return;
     });
+    let countAplusB = countA + countB;
+        console.log(countAplusB);; 
 };
 
 countAandB(input1);
@@ -23,8 +24,9 @@ function toNumber(input) {
     for (i = 0; i < input.length; i++) {
         let convert = input[i].charCodeAt(input[i]) - 96;
         convertArray.push(convert);
-        console.log(convertArray)
     };
+    console.log(convertArray);
+    return;
 };
 
 toNumber(input1);

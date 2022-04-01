@@ -1,0 +1,150 @@
+/* General setting */
+
+.heading, .navbar, h1, h2, .contentboxtop, .contentboxbtm, button{
+    display: flex;
+}
+
+/* Heading setting */
+
+.heading {
+    justify-content: space-between;
+}
+
+.icon {
+    margin-left: 1rem;
+    margin-right: auto;    
+}
+
+.title {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+li {
+    margin: 1rem;
+}
+
+/* Title Banner Setting */
+
+h1, h2 {
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    background: #F7C506;
+    color: #fff;
+    height: 50vh;
+    cursor: pointer;
+}
+
+/* h1 :hover {
+    font-size: 10rem;
+} */
+
+.red {
+    color: #f00;
+}
+
+.blue {
+    color: #00f;
+}
+
+.green {
+    color: #0f0;
+}
+
+.yellow {
+    color: #F7C506;
+}
+
+/* Content setting */
+
+.contentboxtop {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.charmander, .bulbasaur, .squirtle, .pikachu {
+    margin: 1rem;
+    width: 40vw;
+    min-width: 200px;
+    height: 30vh;
+    min-height: 225px;
+    text-align: center;
+    font-size: 2rem;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.charmander {
+    border: 6px solid #a11d33;
+    background: #da1e37;
+}
+
+.bulbasaur {
+    border: 6px solid #028090;
+    background: #5bc0be;
+}
+
+.squirtle {
+    border: 6px solid #01497c;
+    background: #90e0ef;
+}
+
+.pikachu {
+    border: 6px solid #ff8800;
+    background: #ffea00;
+}
+
+.contentboxbtm {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.snorlax, .Eevee, .mankey, .psyduck {
+    margin: 1rem;
+    width: 40vw;
+    min-width: 200px;
+    height: 30vh;
+    min-height: 225px;
+    text-align: center;
+    font-size: 2rem;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+button {
+    margin: auto;
+}
+
+.snorlax {
+    border: 6px solid #00264f;
+    background: #012966;
+}
+
+.Eevee {
+    border: 6px solid #603808;
+    background: #ffedd8;
+}
+
+.mankey {
+    border: 6px solid #ab947e;
+    background: #a9927d;
+}
+
+.psyduck {
+    border: 6px solid #ff8800;
+    background: #ffea00;
+}
+
+
+@media (min-width:1200px) {
+.contentbox {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    }
+}

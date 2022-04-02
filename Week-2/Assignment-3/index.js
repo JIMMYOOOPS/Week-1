@@ -10,8 +10,9 @@ let input2 = [
 function count(input) { 
     const inputs = { };
     for(let i = 0; i < input.length; i++) {
-        if (!inputs[input[i]])
+        if (!inputs[input[i]]) {
         inputs[input[i]] = 0;
+        }
         inputs[input[i]]++;
     }
     return inputs;
@@ -22,10 +23,11 @@ console.log(count(input1));
 function groupByKey(input) {
     const inputs = { };
     for(let i = 0; i < input.length; i++) {
-        if (!inputs[input[i].key])
+        if (!inputs[input[i].key]) {
         inputs[input[i].key] = 0;
+        }
         inputs[input[i].key] = inputs[input[i].key] + input[i].value;
-        console.log(inputs);
+        // console.log(inputs);
     }
     return inputs;
 }

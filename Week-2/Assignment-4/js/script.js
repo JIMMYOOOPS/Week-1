@@ -6,4 +6,3 @@ bannerMain.addEventListener("click", bannerWordChange);
 let contentbtn = document.querySelector("button")
 let showcontentbtn = () => {document.querySelector(".contentboxbtm").style.display  = "flex";}
 contentbtn.addEventListener("click", showcontentbtn)
-

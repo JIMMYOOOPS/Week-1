@@ -4,7 +4,7 @@ let number2 = [5, 2, 7, 1, 6]
 let number3 = [5, 2, 7, 7, 7, 1, 6] 
 
 function max(numbers) { 
-    let maxnum = 0; //varible to store the max number
+    let maxnum = Number.NEGATIVE_INFINITY; //varible to store the max number and to aviod negative numbers larger than 0 change to -infinity. 
     for(i=0; i < numbers.length; i++) {
         if(numbers[i] > maxnum) {
             maxnum = numbers[i];

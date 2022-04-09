@@ -1,0 +1,25 @@
+extends layout.pug 
+
+block scripthead
+        script.
+            const sum = new XMLHttpRequest();
+            const url = 'http://localhost:3000/data?number=10';
+            sum.onreadystatechange = function() {
+            if (sum.readyState === 4 && sum.status === 200) {
+            console.log(sum.responseText)
+                }
+            };
+            sum.open('GET', url)
+            sum.send()
+block heading 
+    h1#heading  Sum of intergers from 1 + ... + N
+block section 
+    section#section 
+            label(for='number') Fill in your number here
+            br
+            input#text-box(type='text')
+            br
+            button#submit-btn(type='button')  Submit
+            br
+block scriptbtm
+    script(type='text/javascript' src='app.js')

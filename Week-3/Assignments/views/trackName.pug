@@ -1,0 +1,14 @@
+extends layout.pug 
+
+block heading 
+    h1#heading Type in your name below
+block section 
+    section#section
+        form(action ='/trackName' method ='POST')
+            label(for = 'name') Fill in your name here
+            br
+            input#nameText-box(type = 'text' name = 'name' placeholder='Enter name')
+            br
+            input#nameSubmit-btn(type='submit' value='Submit')
+            br
+

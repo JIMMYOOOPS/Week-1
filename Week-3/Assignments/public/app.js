@@ -13,4 +13,5 @@ let userInputSum = () => {
     sum.open('GET', url)
     sum.send()
 }
+
 submitbtn.addEventListener('click', userInputSum);

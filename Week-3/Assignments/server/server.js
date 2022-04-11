@@ -21,7 +21,7 @@ app.get('/sum.html', (req, res) => {
 
 app.get('/data', (req, res) => {
   let num = Number(req.query.number);
-  let sum = `${(1 + num)*num / 2}`;
+  let sum = Number(`${(1 + num)*num / 2}`);
   if (!req.query.number) { 
     res.status(400).send('Lack of Parameter');
     return;

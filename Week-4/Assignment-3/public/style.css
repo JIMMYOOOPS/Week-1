@@ -1,0 +1,17 @@
+#useremail, #password {
+    display: flex;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: 1px solid black;
+    font-size: 1.5rem;
+  }
+
+  #loginbtn, #signup {
+      margin: 8px 0;
+      font-size: 1.5rem;
+  }
+
+  #error {
+      color: red;
+      font-size: 2rem;
+  }

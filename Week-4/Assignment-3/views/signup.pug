@@ -1,0 +1,17 @@
+extends layout.pug
+
+block heading
+    h1 Signup Page  
+block form
+    form(name= 'form' method='post' action='/signup')
+        label(for='useremail') User Name
+        br
+        input#useremail(type='email' name='user[email]' required='' placeholder='Enter Email')
+        br
+        label(for='password') Password
+        br
+        input#password(type='password' name='user[password]' required='' minlength='8' placeholder='Enter Password')
+        p Your password should be above or equal to 8 letters
+        p#error= error
+        input#loginbtn(type='submit' value='Sign up')
+

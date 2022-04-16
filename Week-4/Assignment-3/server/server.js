@@ -28,7 +28,7 @@ db.connect((err) => {
 });
 
 //Create DB
-app.get('/createdb', (req, res) => {
+app.get('/database', (req, res) => {
     let sql = 'CREATE DATABASE assignment';
     db.query(sql, (err, result) => {
         if(err) {
@@ -41,8 +41,8 @@ app.get('/createdb', (req, res) => {
 });
 
 //Create table
-app.get('/createusertable', (req, res) => {
-    let sql = 'CREATE TABLE user(id int AUTO_INCREMENT, email VARCHAR(255), password VARCHAR(255), PRIMARY KEY(id))';
+app.get('/usertable', (req, res) => {
+    let sql = 'CREATE TABLE user(id int AUTO_INCREMENT, email VARCHAR(255), password VARCHAR(255), PRIMARY KEY(id), CONSTRAINT email_unique UNIQUE (email))';
     db.query(sql, (err,result) => {
         if(err) {
             throw err;
@@ -102,7 +102,7 @@ app.get('/member', (req, res) => {
 })
 
 //Select all users
-app.get('/getusers', (req, res) => {
+app.get('/users', (req, res) => {
     let sql = 'SELECT * FROM user';
     let query = db.query(sql, (err, results) => {
         if (err) {
@@ -115,7 +115,7 @@ app.get('/getusers', (req, res) => {
 })
 
 //Select user by :id
-app.get('/getuser/:id', (req, res) => {
+app.get('/user/:id', (req, res) => {
     let sql = `SELECT * FROM user WHERE id = ${req.body.user.username}`;
     let query = db.query(sql, (err, result) => {
         if (err) {
@@ -128,7 +128,7 @@ app.get('/getuser/:id', (req, res) => {
 })
 
 //Delete user by :id
-app.get('/deleteuser/:id', (req, res) => {
+app.delete('/user/:id', (req, res) => {
     let sql = `DELETE FROM user WHERE id = ${req.params.id}`;
     let query = db.query(sql, (err, result) => {
         if (err) {
@@ -144,5 +144,4 @@ app.listen(3000, () => {
     console.log(`Listening to Port ${port}`);
 });
 
-// ALTER TABLE assignment.user DROP id;
-// ALTER TABLE assignment.user ADD  id INT( 1 ) NOT NULL AUTO_INCREMENT FIRST ,ADD PRIMARY KEY (id);
+

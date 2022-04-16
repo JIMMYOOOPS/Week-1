@@ -1,9 +1,8 @@
 function ajax(src, callback){
     const products = new XMLHttpRequest();
-    products.responseType = 'json';
     products.onreadystatechange = function() {
         if (products.readyState === 4 && products.status === 200) {
-            let response = JSON.stringify(products.response);
+            let response = products.response;
             callback(response);
         } else if (products.readyState === 4 && products.status === 400) {
             console.log(products.response)
